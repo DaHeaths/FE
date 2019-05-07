@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>javaScript | FE</title>
+    <meta name="description" content="前端代码规范">
+    <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.c1facf56.css" as="style"><link rel="preload" href="/assets/js/app.96af54ce.js" as="script"><link rel="preload" href="/assets/js/4.86a20cb5.js" as="script"><link rel="prefetch" href="/assets/js/2.112a500c.js"><link rel="prefetch" href="/assets/js/3.19948ee9.js"><link rel="prefetch" href="/assets/js/5.6124fde0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c1facf56.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">FE</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/html.html" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/guide/css.html" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/guide/javaScript/" class="nav-link router-link-exact-active router-link-active">JavaScript</a></li></ul></div></div><div class="nav-item"><a href="/about.html" class="nav-link">关于</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">规范</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/html.html" class="nav-link">HTML</a></li><li class="dropdown-item"><!----> <a href="/guide/css.html" class="nav-link">CSS</a></li><li class="dropdown-item"><!----> <a href="/guide/javaScript/" class="nav-link router-link-exact-active router-link-active">JavaScript</a></li></ul></div></div><div class="nav-item"><a href="/about.html" class="nav-link">关于</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span></span> <!----></p> <ul class="sidebar-group-items"><li><a href="/guide/javaScript/" class="active sidebar-link">javaScript</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/javaScript/#javascript-语言规范" class="sidebar-link">javaScript 语言规范</a></li><li class="sidebar-sub-header"><a href="/guide/javaScript/#javascript-注释" class="sidebar-link">javaScript 注释</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="javascript"><a href="#javascript" aria-hidden="true" class="header-anchor">#</a> javaScript</h1> <h2 id="javascript-语言规范"><a href="#javascript-语言规范" aria-hidden="true" class="header-anchor">#</a> javaScript 语言规范</h2> <h2 id="javascript-注释"><a href="#javascript-注释" aria-hidden="true" class="header-anchor">#</a> javaScript 注释</h2> <h3 id="开发者信息注释"><a href="#开发者信息注释" aria-hidden="true" class="header-anchor">#</a> 开发者信息注释</h3> <p>“ /** @author developer Name  (Developer Email) */ ”</p> <h3 id="单行注释"><a href="#单行注释" aria-hidden="true" class="header-anchor">#</a> 单行注释</h3> <p>“ // ” 后跟一个空格，缩进与下一行被注释说明代码一致。必须独占一行</p> <h3 id="文档化注释"><a href="#文档化注释" aria-hidden="true" class="header-anchor">#</a> 文档化注释</h3> <p>以 “ /**...*/ ” 结尾，方便审阅代码和文档化代码</p> <div class="language- extra-class"><pre class="language-text"><code>1. 函数 或 方法
+2. 类
+3. 类属性
+4. 事件
+5. 引入文件
+6. nameSpace
+</code></pre></div><p><strong>推荐</strong></p> <div class="language- extra-class"><pre class="language-text"><code>// good
+
+/**
+ * 查询商品详情
+ */
+queryGoods() {
+  // 所需执行流程
+}
+</code></pre></div><h3 id="对象命名注释"><a href="#对象命名注释" aria-hidden="true" class="header-anchor">#</a> 对象命名注释</h3> <p>“ /** nameSpace */ ”</p> <div class="language- extra-class"><pre class="language-text"><code>//good
+
+/**
+ * @nameSpace
+ */
+ let data = {}
+</code></pre></div><h3 id="普通类注释"><a href="#普通类注释" aria-hidden="true" class="header-anchor">#</a> 普通类注释</h3> <p>“ /** @class */ ”</p> <div class="language- extra-class"><pre class="language-text"><code>// good
+
+/**
+ * 描述
+ *
+ * @class
+ */
+function handleDelete() {
+  // 所需执行流程
+}
+</code></pre></div><h3 id="继承类注释"><a href="#继承类注释" aria-hidden="true" class="header-anchor">#</a> 继承类注释</h3> <p>“ /** @class @extends */ ”</p> <div class="language- extra-class"><pre class="language-text"><code>// good
+
+/**
+ * 描述
+ *
+ * @class
+ * @extends
+ */
+function handleLoading() {
+  handleDelete()
+}
+
+util.inherits(handleDelete, handLoading)
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.96af54ce.js" defer></script><script src="/assets/js/4.86a20cb5.js" defer></script>
+  </body>
+</html>
